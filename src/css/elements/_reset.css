@@ -21,6 +21,8 @@ body {
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-family);
+    background-color: rgb(0 0 0 / 5%);
 }
 
 h1,

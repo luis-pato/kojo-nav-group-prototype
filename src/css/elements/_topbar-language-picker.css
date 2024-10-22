@@ -1,0 +1,25 @@
+.language-picker {
+    grid-area: language;
+}
+
+.language-picker__list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-normal);
+    list-style: none;
+    margin: 0;
+}
+
+.language-picker__link {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+.language-picker__link[aria-current="true"] {
+    color: var(--color-primary);
+    pointer-events: none;
+}
+
+.language-picker__link:is(:hover, :focus-visible) {
+    color: var(--color-primary);
+}

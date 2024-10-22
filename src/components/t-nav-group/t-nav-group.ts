@@ -42,7 +42,14 @@ export class TNavGroup extends LitElement {
     }
 
     _renderDesktopTemplate() {
-        return html`<h1>Desktop</h1>`
+        return html`
+            <slot name="topbar">
+                <slot name="topbar-logo"></slot>
+                <slot name="topbar-actions"></slot>
+                <slot name="topbar-language-picker"></slot>
+                <slot name="topbar-main-nav"></slot>
+            </slot>
+        `
     }
 }
 

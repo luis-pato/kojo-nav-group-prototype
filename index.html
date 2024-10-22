@@ -1,20 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Kojo Nav group</title>
 
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="stylesheet" href="./src/css/prototype.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./src/css/prototype.css"/>
+
+    <script type="module" src="/src/components/t-main-nav-li-with-popover-subnav/t-main-nav-li-with-popover-subnav.ts"></script>
+    <script type="module" src="/src/components/t-main-nav-popup-toggle/t-main-nav-popup-toggle.ts"></script>
     <script type="module" src="/src/components/t-nav-group/t-nav-group.ts"></script>
-  </head>
-  <body>
-    <t-nav-group nav-group-breakpoint="840">
+</head>
+<body>
 
-    </t-nav-group>
-  </body>
+<t-nav-group nav-group-breakpoint="840">
+
+    <toujou-topbar class="topbar" slot="topbar">
+        <%- include('./src/partials/topbar-logo.ejs') %>
+        <%- include('./src/partials/topbar-actions.ejs') %>
+        <%- include('./src/partials/topbar-language-picker.ejs') %>
+        <%- include('./src/partials/topbar-main-nav.ejs') %>
+    </toujou-topbar>
+
+</t-nav-group>
+</body>
 </html>
