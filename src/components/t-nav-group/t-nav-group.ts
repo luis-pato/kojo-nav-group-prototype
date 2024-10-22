@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 /**
@@ -36,19 +36,8 @@ export class TNavGroup extends LitElement {
     @property({ type: String, reflect: true, attribute: 'viewport-type' })
     viewportType: ViewportType = ViewportType.MOBILE;
 
-    render() {
-        return html`
-            <slot name="topbar">
-                <slot name="topbar-logo"></slot>
-                <slot name="topbar-actions"></slot>
-                <slot name="topbar-burger-button"></slot>
-                <slot name="topbar-mobile-navs">
-                    <slot name="topbar-language-picker"></slot>
-                    <slot name="topbar-main-nav"></slot>
-                    <slot name="topbar-service-nav"></slot>
-                </slot>
-            </slot>
-        `
+    protected createRenderRoot(): HTMLElement | DocumentFragment {
+        return this;
     }
 
     connectedCallback() {
