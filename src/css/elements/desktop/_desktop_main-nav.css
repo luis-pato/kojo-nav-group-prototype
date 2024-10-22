@@ -5,7 +5,6 @@ t-nav-group[viewport-type="desktop"] {
 
         grid-area: mainnav;
         height: var(--main-nav-height);
-        border: 10px solid red;
     }
 
     .main-nav__list {
