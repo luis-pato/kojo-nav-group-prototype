@@ -1,0 +1,22 @@
+.icon {
+    --icon-size: var(--spacing-ms);
+    --icon-color: currentColor;
+    --icon-flex-shrink: 0;
+
+    display: inline-block;
+    flex-shrink: var(--icon-flex-shrink);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--icon-color);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.icon[icon-name="chevron-down"] {
+    mask-image: var(--icon-chevron-down);
+}
+
+.icon[icon-name="chevron-right"] {
+    mask-image: var(--icon-chevron-right);
+}
