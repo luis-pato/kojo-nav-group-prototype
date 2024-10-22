@@ -1,5 +1,10 @@
 /**
- * Add correct anchor-name and position-anchor to the list item and the child subnav list elements
+ * Represents a list item that can contain a popover sub-navigation.
+ *
+ * Create and add correct anchor-name and position-anchor css rules to the list item and the child subnav elements
+ *
+ * @class TMainNavLiWithPopoverSubnav
+ * @extends {HTMLLIElement}
  */
 class TMainNavLiWithPopoverSubnav extends HTMLLIElement {
     private childSubnav: HTMLUListElement | null = null;
@@ -14,7 +19,6 @@ class TMainNavLiWithPopoverSubnav extends HTMLLIElement {
         this.childSubnav = this.querySelector(this.SELECTORS.CHILD_POPOVER_SUBNAV);
         if (!this.childSubnav) return;
 
-        console.log('1', this.childSubnav);
         this._init();
     }
 
