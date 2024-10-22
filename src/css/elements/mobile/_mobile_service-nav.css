@@ -1,0 +1,21 @@
+t-nav-group[viewport-type="mobile"] {
+    .service-nav {
+        padding: var(--spacing-normal);
+        border-top: 1px solid var(--color-bg);
+        margin-top: var(--spacing-xxl);
+    }
+
+    .service-nav__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-normal) var(--spacing-m);
+    }
+
+    .service-nav__link {
+        color: var(--color-bg);
+        text-decoration: none;
+    }
+}

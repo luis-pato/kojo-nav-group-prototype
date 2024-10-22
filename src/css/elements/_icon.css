@@ -13,10 +13,81 @@
     mask-repeat: no-repeat;
 }
 
+.icon {
+    --icon-size: var(--spacing-ms);
+    --icon-color: currentColor;
+    --icon-flex-shrink: 0;
+
+    display: inline-block;
+    flex-shrink: var(--icon-flex-shrink);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--icon-color);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.icon[icon-size="xxxl"] {
+    --icon-size: var(--spacing-xxxl);
+}
+
+.icon[icon-size="xxl"] {
+    --icon-size: var(--spacing-xxl);
+}
+
+.icon[icon-size="xl"] {
+    --icon-size: var(--spacing-xl);
+}
+
+.icon[icon-size="l"] {
+    --icon-size: var(--spacing-l);
+}
+
+.icon[icon-size="m"] {
+    --icon-size: var(--spacing-m);
+}
+
+.icon[icon-size="ms"] {
+    --icon-size: var(--spacing-ms);
+}
+
+.icon[icon-size="normal"] {
+    --icon-size: var(--spacing-normal);
+}
+
+.icon[icon-size="s"] {
+    --icon-size: var(--spacing-s);
+}
+
+.icon[icon-size="xs"] {
+    --icon-size: var(--spacing-xs);
+}
+
+.icon[icon-size="xxs"] {
+    --icon-size: var(--spacing-xxs);
+}
+
 .icon[icon-name="chevron-down"] {
     mask-image: var(--icon-chevron-down);
 }
 
 .icon[icon-name="chevron-right"] {
     mask-image: var(--icon-chevron-right);
+}
+
+.icon[icon-name="star"] {
+    mask-image: var(--icon-star);
+}
+
+.icon[icon-name="settings"] {
+    mask-image: var(--icon-settings);
+}
+
+.icon[icon-name="science"] {
+    mask-image: var(--icon-science);
+}
+
+.icon[icon-name="arrow-left"] {
+    mask-image: var(--icon-arrow-left);
 }

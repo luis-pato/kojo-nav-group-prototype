@@ -24,8 +24,12 @@
     <toujou-topbar class="topbar" slot="topbar">
         <%- include('./src/partials/topbar-logo.ejs') %>
         <%- include('./src/partials/topbar-actions.ejs') %>
-        <%- include('./src/partials/topbar-language-picker.ejs') %>
-        <%- include('./src/partials/topbar-main-nav.ejs') %>
+        <%- include('./src/partials/topbar-burger-button.ejs') %>
+        <span class="topbar-mobile-navs" slot="topbar-mobile-navs" popover id="topbar-mobile-navs">
+            <%- include('./src/partials/topbar-language-picker.ejs') %>
+            <%- include('./src/partials/topbar-main-nav.ejs') %>
+            <%- include('./src/partials/topbar-service-nav.ejs') %>
+        </span>
     </toujou-topbar>
 
 </t-nav-group>

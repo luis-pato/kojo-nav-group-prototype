@@ -14,6 +14,7 @@ class TMainNavLiWithPopoverSubnav extends HTMLLIElement {
         this.childSubnav = this.querySelector(this.SELECTORS.CHILD_POPOVER_SUBNAV);
         if (!this.childSubnav) return;
 
+        console.log('1', this.childSubnav);
         this._init();
     }
 

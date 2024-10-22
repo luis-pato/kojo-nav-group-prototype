@@ -11,6 +11,7 @@ class TMainNavPopupToggle extends HTMLButtonElement {
     constructor() {
         super();
 
+
         this.parentItem = this.closest(this.SELECTORS.PARENT_LIST_ITEM);
         if (!this.parentItem) return;
 

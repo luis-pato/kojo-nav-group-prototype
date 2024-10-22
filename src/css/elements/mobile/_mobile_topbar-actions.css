@@ -1,0 +1,20 @@
+t-nav-group[viewport-type="mobile"] {
+    .topbar-actions {
+        grid-area: actions;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: var(--spacing-normal);
+        list-style: none;
+        margin: 0;
+    }
+
+    .topbar-actions__link {
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+
+    .topbar-actions__text {
+        display: none;
+    }
+}

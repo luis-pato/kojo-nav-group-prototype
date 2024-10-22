@@ -15,9 +15,18 @@ export class TNavGroup extends LitElement {
     viewportType: ViewportType = ViewportType.MOBILE;
 
     render() {
-        return this.viewportType === ViewportType.MOBILE
-            ? this._renderMobileTemplate()
-            : this._renderDesktopTemplate();
+        return html`
+            <slot name="topbar">
+                <slot name="topbar-logo"></slot>
+                <slot name="topbar-actions"></slot>
+                <slot name="topbar-burger-button"></slot>
+                <slot name="topbar-mobile-navs">
+                    <slot name="topbar-language-picker"></slot>
+                    <slot name="topbar-main-nav"></slot>
+                    <slot name="topbar-service-nav"></slot>
+                </slot>
+            </slot>
+        `
     }
 
     connectedCallback() {
@@ -35,26 +44,5 @@ export class TNavGroup extends LitElement {
     updateViewportType() {
         const mediaQuery = window.matchMedia(`(min-width: ${this.breakpoint}px)`);
         this.viewportType = mediaQuery.matches ? ViewportType.DESKTOP : ViewportType.MOBILE;
-    }
-
-    _renderMobileTemplate() {
-        return html`<h1>Mobile</h1>`
-    }
-
-    _renderDesktopTemplate() {
-        return html`
-            <slot name="topbar">
-                <slot name="topbar-logo"></slot>
-                <slot name="topbar-actions"></slot>
-                <slot name="topbar-language-picker"></slot>
-                <slot name="topbar-main-nav"></slot>
-            </slot>
-        `
-    }
-}
-
-declare global {
-    interface HTMLElementTagNameMap {
-        't-nav-group': TNavGroup
     }
 }

@@ -1,0 +1,5 @@
+t-nav-group[viewport-type="desktop"] {
+    .topbar-mobile-navs {
+        display: contents;
+    }
+}

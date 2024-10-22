@@ -9,11 +9,28 @@
 
 /* elements */
 @import url('./elements/_icon.css');
-@import url('./elements/_main-nav.css');
-@import url('./elements/_main-nav-first-level.css');
-@import url('./elements/_main-nav-second-level.css');
-@import url('./elements/_main-nav-third-level.css');
-@import url('./elements/_topbar.css');
-@import url('./elements/_topbar-actions.css');
-@import url('./elements/_topbar-language-picker.css');
-@import url('./elements/_topbar-logo.css');
+
+/* desktop */
+@import url('./elements/desktop/_desktop_burger-button.css');
+@import url('./elements/desktop/_desktop_main-nav.css');
+@import url('./elements/desktop/_desktop_main-nav-first-level.css');
+@import url('./elements/desktop/_desktop_main-nav-second-level.css');
+@import url('./elements/desktop/_desktop_main-nav-third-level.css');
+@import url('./elements/desktop/_desktop_service-nav.css');
+@import url('./elements/desktop/_desktop_topbar.css');
+@import url('./elements/desktop/_desktop_topbar-actions.css');
+@import url('./elements/desktop/_desktop_topbar-language-picker.css');
+@import url('./elements/desktop/_desktop_topbar-logo.css');
+@import url('./elements/desktop/_desktop_topbar-mobile-navs.css');
+
+/* mobile */
+@import url('./elements/mobile/_mobile_burger-button.css');
+@import url('./elements/mobile/_mobile_main-nav.css');
+@import url('./elements/mobile/_mobile_main-nav-first-level.css');
+@import url('./elements/mobile/_mobile_main-nav-second-level.css');
+@import url('./elements/mobile/_mobile_main-nav-third-level.css');
+@import url('./elements/mobile/_mobile_service-nav.css');
+@import url('./elements/mobile/_mobile_topbar.css');
+@import url('./elements/mobile/_mobile_topbar-actions.css');
+@import url('./elements/mobile/_mobile_topbar-language-picker.css');
+@import url('./elements/mobile/_mobile_topbar-mobile-navs.css');
