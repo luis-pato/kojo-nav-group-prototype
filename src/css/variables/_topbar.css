@@ -1,0 +1,12 @@
+:root {
+    --topbar-height-mobile: 4rem;
+    --topbar-height-desktop: 5rem;
+}
+
+:root:has(t-nav-group[viewport-type="mobile"]) {
+    --topbar-height: var(--topbar-height-mobile);
+}
+
+:root:has(t-nav-group[viewport-type="desktop"]) {
+    --topbar-height: var(--topbar-height-desktop);
+}

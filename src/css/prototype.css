@@ -6,7 +6,9 @@
 @import url('./variables/_font.css');
 @import url('./variables/_icons.css');
 @import url('./variables/_spacing.css');
+@import url('./variables/_topbar.css');
 
 /* elements */
+@import url('./elements/_content.css');
 @import url('./elements/_icon.css');
 

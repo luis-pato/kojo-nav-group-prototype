@@ -15,7 +15,6 @@ Prototype for kojo's top bar using html popover and position anchor
 2. `npm run deploy`
 
 ## TODOS
-- [ ] make topbar fixed
 - [ ] use dialog for the "span"
 - [ ] remove nav-group, add breakpoint behaviour to topbar
   - [ ] remove nesting in css files
