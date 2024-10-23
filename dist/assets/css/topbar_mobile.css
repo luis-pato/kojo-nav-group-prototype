@@ -36,6 +36,10 @@
     gap: var(--spacing-normal);
     cursor: pointer;
 }
+.main-nav__back-button .main-nav__link {
+    display: flex;
+    align-items: center;
+}
 .main-nav__list[nav-level="1"] {
     --main-nav-level-1-link-height: 2rem;
 

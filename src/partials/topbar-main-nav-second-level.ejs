@@ -9,7 +9,7 @@
     <li class="main-nav__item main-nav__item--title">
         <button popovertarget="sub-nav-<%- secondLevelNavData.id %>" class="main-nav__back-button">
             <toujou-icon class="icon" icon-name="arrow-left" icon-size="l"></toujou-icon>
-            <a href="#" class="main-nav__link">Back</a>
+            <span class="main-nav__link">Menu</span>
         </button>
     </li>
 
@@ -27,7 +27,13 @@
                     <toujou-icon class="icon" icon-size="normal" icon-name="chevron-down" icon-color="font"></toujou-icon>
                 </button>
 
-                <%- include('./src/partials/topbar-main-nav-third-level.ejs', { thirdLevelNavData: item.subnav, secondLevelAnchorName: secondLevelAnchorName }) %>
+                <%- include('./src/partials/topbar-main-nav-third-level.ejs',
+                    {
+                        thirdLevelNavData: item.subnav,
+                        secondLevelAnchorName: secondLevelAnchorName,
+                        secondlevelItemName: item.title
+                    })
+                %>
             <% } %>
         </li>
     <% }); %>
