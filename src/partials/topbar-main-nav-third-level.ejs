@@ -1,0 +1,25 @@
+<ul
+    id="sub-nav-<%- thirdLevelNavData.id %>"
+    class="main-nav__list"
+    nav-level="3"
+    style="position-anchor: <%= secondLevelAnchorName %>"
+    popover
+>
+
+    <li class="main-nav__item main-nav__item--title">
+        <button popovertarget="sub-nav-<%- thirdLevelNavData.id %>" class="main-nav__back-button">
+            <toujou-icon class="icon" icon-name="arrow-left" icon-size="l"></toujou-icon>
+            <a href="#" class="main-nav__link">Back</a>
+        </button>
+    </li>
+
+    <% thirdLevelNavData.items.forEach(function(item) { %>
+        <li
+            id="<%= item.id %>"
+            class="main-nav__item"
+        >
+            <a href="<%= item.link %>" class="main-nav__link"><%= item.title %></a>
+        </li>
+    <% }); %>
+</ul>
+

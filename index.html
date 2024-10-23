@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./src/css/topbar_mobile.css" media="screen and (max-width: 839px)"/>
     <link rel="stylesheet" href="./src/css/topbar_desktop.css" media="screen and (min-width: 840px)"/>
 
-    <script type="module" src="/src/components/t-main-nav-li-with-popover-subnav/t-main-nav-li-with-popover-subnav.ts"></script>
-    <script type="module" src="/src/components/t-main-nav-popup-toggle/t-main-nav-popup-toggle.ts"></script>
     <script type="module" src="/src/components/toujou-topbar/toujou-topbar.ts"></script>
 </head>
 <body>
@@ -27,12 +25,15 @@
         <%- include('./src/partials/topbar-burger-button.ejs') %>
         <span class="topbar-mobile-navs" id="topbar-mobile-navs" popover>
             <%- include('./src/partials/topbar-language-picker.ejs') %>
-            <%- include('./src/partials/topbar-main-nav.ejs') %>
+            <%- include('./src/partials/topbar-main-nav.ejs', { navData: navData }) %>
             <%- include('./src/partials/topbar-service-nav.ejs') %>
         </span>
     </toujou-topbar>
 
     <div class="content">
+
+
+
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur cupiditate facilis hic modi optio, provident quod sunt. Autem dolor ducimus eius et fugiat hic nam placeat reiciendis repudiandae soluta!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur cupiditate facilis hic modi optio, provident quod sunt. Autem dolor ducimus eius et fugiat hic nam placeat reiciendis repudiandae soluta!</p>

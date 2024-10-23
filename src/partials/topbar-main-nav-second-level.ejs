@@ -1,0 +1,35 @@
+<ul
+    id="sub-nav-<%= secondLevelNavData.id %>"
+    class="main-nav__list"
+    nav-level="2"
+    style="position-anchor: <%= firstLevelAnchorName %>"
+    popover
+>
+
+    <li class="main-nav__item main-nav__item--title">
+        <button popovertarget="sub-nav-<%- secondLevelNavData.id %>" class="main-nav__back-button">
+            <toujou-icon class="icon" icon-name="arrow-left" icon-size="l"></toujou-icon>
+            <a href="#" class="main-nav__link">Back</a>
+        </button>
+    </li>
+
+    <% secondLevelNavData.items.forEach(function(item) {
+        const secondLevelAnchorName = `--anchorName-${item.id}`
+    %>
+        <li
+            id="<%= item.id %>"
+            class="main-nav__item"
+            style="anchor-name: <%= secondLevelAnchorName %>;"
+        >
+            <a href="<%= item.link %>" class="main-nav__link"><%= item.title %></a>
+            <%if (item.subnav) { %>
+                <button class="main-nav__subnav-toggle" popovertarget="sub-nav-<%- item.subnav.id %>">
+                    <toujou-icon class="icon" icon-size="normal" icon-name="chevron-down" icon-color="font"></toujou-icon>
+                </button>
+
+                <%- include('./src/partials/topbar-main-nav-third-level.ejs', { thirdLevelNavData: item.subnav, secondLevelAnchorName: secondLevelAnchorName }) %>
+            <% } %>
+        </li>
+    <% }); %>
+</ul>
+

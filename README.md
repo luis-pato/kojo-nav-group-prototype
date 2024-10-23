@@ -18,8 +18,4 @@ Prototype for kojo's top bar using html popover and position anchor
 - [ ] use dialog for the "span"
 - [ ] Polyfill
 - [ ] test and Improve a11y
-- [ ] See if we really need the webcomponents
-  - [ ] t-main-nav-li-with-popover-subnav
-  - [ ] t-main-nav-popup-toggle
-- [ ] find better names for the webcomponents
 - [ ] Test with large menus / menus and submenus with lots of items

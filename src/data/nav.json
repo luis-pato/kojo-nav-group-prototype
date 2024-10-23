@@ -1,0 +1,73 @@
+{
+  "mainNav": [
+    {
+      "id": "level-1-id-1",
+      "title": "One",
+      "link": "#",
+      "subnav": {
+        "id": "level-2-id-2",
+        "title": "Back",
+        "items": [
+          { "id": "level-2-id-3", "title": "Porto", "link": "#" },
+          {
+            "id": "level-2-id-4",
+            "title": "Munich",
+            "link": "#",
+            "subnav": {
+              "id": "level-3-id-5",
+              "title": "Back",
+              "items": [
+                { "id": "level-3-id-6", "title": "Dark Green", "link": "#" },
+                { "id": "level-3-id-7", "title": "Dark Purple", "link": "#" },
+                { "id": "level-3-id-8", "title": "Light Purple", "link": "#" },
+                { "id": "level-3-id-9", "title": "Violet", "link": "#" }
+              ]
+            }
+          },
+          { "id": "level-2-id-10", "title": "London", "link": "#" },
+          { "id": "level-2-id-11", "title": "New York", "link": "#" }
+        ]
+      }
+    },
+    {
+      "id": "level-1-id-12",
+      "title": "Two",
+      "link": "#"
+    },
+    {
+      "id": "level-1-id-13",
+      "title": "Three",
+      "link": "#"
+    },
+    {
+      "id": "level-1-id-14",
+      "title": "A very long 4th item",
+      "link": "#",
+      "subnav": {
+        "id": "level-2-id-15",
+        "title": "Back",
+        "items": [
+          { "id": "level-2-id-16", "title": "Helsinki", "link": "#" },
+          {
+            "id": "level-2-id-17",
+            "title": "Augsburg",
+            "link": "#",
+            "subnav": {
+              "id": "level-3-id-18",
+              "title": "Back",
+              "items": [
+                { "id": "level-3-id-19", "title": "Very Very Dark Blue", "link": "#" },
+                { "id": "level-3-id-20", "title": "Very Very Dark Yellow", "link": "#" },
+                { "id": "level-3-id-21", "title": "Light Green", "link": "#" },
+                { "id": "level-3-id-22", "title": "Purple", "link": "#" }
+              ]
+            }
+          },
+          { "id": "level-2-id-23", "title": "Madrid", "link": "#" },
+          { "id": "level-2-id-24", "title": "San Francisco", "link": "#" },
+          { "id": "level-2-id-25", "title": "Dublin", "link": "#" }
+        ]
+      }
+    }
+  ]
+}
