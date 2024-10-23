@@ -16,6 +16,9 @@ Prototype for kojo's top bar using html popover and position anchor
 
 ## TODOS
 - [ ] use dialog for the "span"
-- [ ] Polyfill
 - [ ] test and Improve a11y
 - [ ] Test with large menus / menus and submenus with lots of items
+- 👎 Polyfill
+
+## PROBLEMS
+- Polyfill (oddbird/css-anchor-positioning) still does not support all the features we need

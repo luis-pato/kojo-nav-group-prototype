@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/assets/css/topbar_desktop.css" media="screen and (min-width: 840px)"/>
 
     <script type="module" src="/src/components/toujou-topbar/toujou-topbar.ts"></script>
+    <script type="module" src="/src/js/main.js"></script>
 
     <script type="module">
         // Load css files directly on dev environment so we can have hot reload
@@ -33,14 +34,13 @@
 
             document.head.appendChild(mobileDevStylesheet);
             document.head.appendChild(desktopDevStylesheet);
-        };
-
+        }
     </script>
 </head>
 <body>
 
-    <toujou-topbar class="topbar" topbar-breakpoint="1111" viewport-type="mobile">
-        <%- include('./src/partials/topbar-logo.ejs') %>
+<toujou-topbar class="topbar" topbar-breakpoint="1111" viewport-type="mobile">
+    <%- include('./src/partials/topbar-logo.ejs') %>
         <%- include('./src/partials/topbar-actions.ejs') %>
         <%- include('./src/partials/topbar-burger-button.ejs') %>
         <span class="topbar-mobile-navs" id="topbar-mobile-navs" popover>

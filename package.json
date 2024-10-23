@@ -12,6 +12,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@oddbird/css-anchor-positioning": "^0.3.1",
     "lit": "^3.2.0"
   },
   "devDependencies": {
