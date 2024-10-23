@@ -9,4 +9,7 @@ export default defineConfig({
             navData: navData,
         })
     ],
+    build: {
+        assetsInlineLimit: 0
+    }
 });
