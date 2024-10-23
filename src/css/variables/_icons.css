@@ -1,8 +1,8 @@
 :root {
-    --icon-chevron-down: url('../../assets/icon-chevron-down.svg');
-    --icon-chevron-right: url('../../assets/icon-chevron-right.svg');
-    --icon-star: url('../../assets/icon-star.svg');
-    --icon-settings: url('../../assets/icon-settings.svg');
-    --icon-science: url('../../assets/icon-science.svg');
-    --icon-arrow-left: url('../../assets/icon-arrow-left.svg');
+    --icon-chevron-down: url('../icons/icon-chevron-down.svg');
+    --icon-chevron-right: url('../icons/icon-chevron-right.svg');
+    --icon-star: url('../icons/icon-star.svg');
+    --icon-settings: url('../icons/icon-settings.svg');
+    --icon-science: url('../icons/icon-science.svg');
+    --icon-arrow-left: url('../icons/icon-arrow-left.svg');
 }

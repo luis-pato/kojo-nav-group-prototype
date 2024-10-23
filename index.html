@@ -11,11 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/prototype.css"/>
-    <link rel="stylesheet" href="./src/css/topbar_mobile.css" media="screen and (max-width: 839px)"/>
-    <link rel="stylesheet" href="./src/css/topbar_desktop.css" media="screen and (min-width: 840px)"/>
+    <link rel="stylesheet" href="/assets/css/prototype.css"/>
+
+    <link rel="stylesheet" href="/assets/css/topbar_mobile.css" media="screen and (max-width: 839px)"/>
+    <link rel="stylesheet" href="/assets/css/topbar_desktop.css" media="screen and (min-width: 840px)"/>
 
     <script type="module" src="/src/components/toujou-topbar/toujou-topbar.ts"></script>
+
+    <script type="module">
+        // Load css files directly on dev environment so we can have hot reload
+        if (import.meta.env.DEV) {
+            const mobileDevStylesheet = document.createElement('link');
+            mobileDevStylesheet.rel = 'stylesheet';
+            mobileDevStylesheet.href = './src/css/topbar_mobile.css';
+            mobileDevStylesheet.media = 'screen and (max-width: 839px)';
+
+            const desktopDevStylesheet = document.createElement('link');
+            desktopDevStylesheet.rel = 'stylesheet';
+            desktopDevStylesheet.href = './src/css/topbar_desktop.css';
+            desktopDevStylesheet.media = 'screen and (min-width: 840px)';
+
+            document.head.appendChild(mobileDevStylesheet);
+            document.head.appendChild(desktopDevStylesheet);
+        };
+
+    </script>
 </head>
 <body>
 

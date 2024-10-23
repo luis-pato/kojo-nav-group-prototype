@@ -9,7 +9,5 @@ export default defineConfig({
             navData: navData,
         })
     ],
-    build: {
-        assetsInlineLimit: 0
-    }
+    publicDir: 'public'
 });
