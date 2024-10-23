@@ -15,7 +15,6 @@ Prototype for kojo's top bar using html popover and position anchor
 2. `npm run deploy`
 
 ## TODOS
-- [ ] use dialog for the "span"
 - [ ] test and Improve a11y
 - [ ] Test with large menus / menus and submenus with lots of items
 - 👎 Polyfill
