@@ -234,9 +234,11 @@
 .language-picker__link[aria-current="true"] {
     text-decoration: underline;
 }
-.topbar-mobile-navs {
+.topbar-dialog {
     display: flex;
     width: 100%;
+    max-width: 100%;
+    height: calc(100dvh - var(--topbar-height));
     top: 0;
     bottom: unset;
     background-color: var(--color-primary);
@@ -247,13 +249,14 @@
     /*overflow: hidden;*/
     pointer-events: none;
     opacity: 0;
-    height: calc(100dvh - var(--topbar-height));
     transform: translateY(-100%);
     transition: height .25s ease-in-out, padding .25s ease-in-out, opacity .25s ease-in-out;
+    margin: 0;
 }
-.topbar-mobile-navs:popover-open {
+.topbar-dialog[open] {
     top: var(--topbar-height);
     pointer-events: all;
     opacity: 1;
     transform: translateY(0);
+    overscroll-behavior: contain;
 }

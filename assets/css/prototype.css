@@ -216,6 +216,14 @@ figure {
     --icon-science: url('../icons/icon-science.svg');
     --icon-arrow-left: url('../icons/icon-arrow-left.svg');
 }
+:root[prototype-environment="dev"] {
+    --icon-chevron-down: url('../../assets/icon-chevron-down.svg');
+    --icon-chevron-right: url('../../assets/icon-chevron-right.svg');
+    --icon-star: url('../../assets/icon-star.svg');
+    --icon-settings: url('../../assets/icon-settings.svg');
+    --icon-science: url('../../assets/icon-science.svg');
+    --icon-arrow-left: url('../../assets/icon-arrow-left.svg');
+}
 :root,
 ::before,
 ::after {
@@ -258,8 +266,12 @@ figure {
     --topbar-height: var(--topbar-height-desktop);
 }
 /* elements */
+body:has(dialog[open]) {
+    overflow: hidden !important;
+}
 .content {
     padding: calc(var(--topbar-height) + var(--spacing-normal)) var(--spacing-normal) var(--spacing-l);
+    line-height: 1.5;
 }
 .icon {
     --icon-size: var(--spacing-ms);
