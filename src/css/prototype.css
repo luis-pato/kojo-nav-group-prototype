@@ -9,6 +9,7 @@
 @import url('./variables/_topbar.css');
 
 /* elements */
+@import url('./elements/_body.css');
 @import url('./elements/_content.css');
 @import url('./elements/_icon.css');
 

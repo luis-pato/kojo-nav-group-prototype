@@ -258,6 +258,9 @@ figure {
     --topbar-height: var(--topbar-height-desktop);
 }
 /* elements */
+body:has(dialog[open]) {
+    overflow: hidden !important;
+}
 .content {
     padding: calc(var(--topbar-height) + var(--spacing-normal)) var(--spacing-normal) var(--spacing-l);
 }

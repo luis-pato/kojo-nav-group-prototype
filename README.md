@@ -22,3 +22,4 @@ Prototype for kojo's top bar using html popover and position anchor
 
 ## PROBLEMS
 - Polyfill (oddbird/css-anchor-positioning) still does not support all the features we need
+  - Currently disabled. We need to remove comment from `src/js/main/js`

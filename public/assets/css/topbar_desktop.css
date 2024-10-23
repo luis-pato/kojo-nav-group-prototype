@@ -205,6 +205,6 @@
     -o-object-fit: cover;
        object-fit: cover;
 }
-.topbar-mobile-navs {
+.topbar-dialog {
     display: contents;
 }

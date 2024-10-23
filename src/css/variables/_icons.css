@@ -6,3 +6,12 @@
     --icon-science: url('../icons/icon-science.svg');
     --icon-arrow-left: url('../icons/icon-arrow-left.svg');
 }
+
+:root[prototype-environment="dev"] {
+    --icon-chevron-down: url('../../assets/icon-chevron-down.svg');
+    --icon-chevron-right: url('../../assets/icon-chevron-right.svg');
+    --icon-star: url('../../assets/icon-star.svg');
+    --icon-settings: url('../../assets/icon-settings.svg');
+    --icon-science: url('../../assets/icon-science.svg');
+    --icon-arrow-left: url('../../assets/icon-arrow-left.svg');
+}
