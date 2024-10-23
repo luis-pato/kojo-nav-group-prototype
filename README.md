@@ -16,8 +16,6 @@ Prototype for kojo's top bar using html popover and position anchor
 
 ## TODOS
 - [ ] use dialog for the "span"
-- [ ] remove nav-group, add breakpoint behaviour to topbar
-  - [ ] remove nesting in css files
 - [ ] Polyfill
 - [ ] test and Improve a11y
 - [ ] See if we really need the webcomponents

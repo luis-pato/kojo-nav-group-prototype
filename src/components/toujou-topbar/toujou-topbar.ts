@@ -17,14 +17,14 @@ enum ViewportType {
  * @class
  * @extends {LitElement}
  */
-@customElement('t-nav-group')
-export class TNavGroup extends LitElement {
+@customElement('toujou-topbar')
+export class ToujouTopbar extends LitElement {
     /**
      * The breakpoint at which the navigation switches from mobile to desktop (value in px)
      * @type {number}
      * @default 840
      */
-    @property({ type: String, attribute: 'nav-group-breakpoint' })
+    @property({ type: String, attribute: 'topbar-breakpoint' })
     breakpoint: number = 840
 
     /**

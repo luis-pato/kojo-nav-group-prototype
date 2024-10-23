@@ -1,5 +1,4 @@
-t-nav-group[viewport-type="desktop"] {
-    .burger-button {
-        display: none;
-    }
+.burger-button {
+    display: none;
 }
+

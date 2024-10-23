@@ -1,28 +1,26 @@
-t-nav-group[viewport-type="mobile"] {
-    .main-nav {
-        flex-grow: 1;
-        padding: var(--spacing-normal);
-    }
+.main-nav {
+    flex-grow: 1;
+    padding: var(--spacing-normal);
+}
 
-    .main-nav__item--title {
-        display: flex;
-        flex-flow: row nowrap;
-        grid-gap: var(--spacing-l);
-    }
+.main-nav__item--title {
+    display: flex;
+    flex-flow: row nowrap;
+    grid-gap: var(--spacing-l);
+}
 
-    .main-nav__item--title .icon {
-        background-color: var(--color-bg);
-    }
+.main-nav__item--title .icon {
+    background-color: var(--color-bg);
+}
 
-    .main-nav__back-button {
-        border: none;
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: var(--spacing-normal);
-        cursor: pointer;
-    }
+.main-nav__back-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-normal);
+    cursor: pointer;
 }

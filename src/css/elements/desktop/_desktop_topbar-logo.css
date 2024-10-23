@@ -1,19 +1,17 @@
-t-nav-group[viewport-type="desktop"] {
-    .topbar-logo {
-        height: fit-content;
-        width: fit-content;
-        grid-area: logo;
-    }
+.topbar-logo {
+    height: fit-content;
+    width: fit-content;
+    grid-area: logo;
+}
 
-    .topbar-logo__link {
-        height: calc(var(--topbar-height) - var(--spacing-normal));
-        display: block;
-        margin: 0;
-    }
+.topbar-logo__link {
+    height: calc(var(--topbar-height) - var(--spacing-normal));
+    display: block;
+    margin: 0;
+}
 
-    .topbar-logo__logo {
-        height: 100%;
-        width: auto;
-        object-fit: cover;
-    }
+.topbar-logo__logo {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }

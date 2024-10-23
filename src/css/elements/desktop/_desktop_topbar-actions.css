@@ -1,24 +1,22 @@
-t-nav-group[viewport-type="desktop"] {
-    .topbar-actions {
-        grid-area: actions;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: var(--spacing-normal);
-        list-style: none;
-        margin: 0;
-    }
+.topbar-actions {
+    grid-area: actions;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--spacing-normal);
+    list-style: none;
+    margin: 0;
+}
 
-    .topbar-actions__link {
-        text-decoration: none;
-        color: var(--color-primary);
-        display: flex;
-        flex-flow: row nowrap;
-        gap: var(--spacing-xs);
-        align-items: center;
-    }
+.topbar-actions__link {
+    text-decoration: none;
+    color: var(--color-primary);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
 
-    .topbar-actions__link:is(:hover, :focus-visible) {
-        color: var(--color-primary-dark);
-    }
+.topbar-actions__link:is(:hover, :focus-visible) {
+    color: var(--color-primary-dark);
 }

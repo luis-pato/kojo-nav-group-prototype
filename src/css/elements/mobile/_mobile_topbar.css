@@ -1,20 +1,18 @@
-t-nav-group[viewport-type="mobile"] {
-    .topbar {
-        border-bottom: 2px solid var(--color-primary);
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-rows: var(--topbar-height) auto;
-        grid-template-areas:
+.topbar {
+    border-bottom: 2px solid var(--color-primary);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: var(--topbar-height) auto;
+    grid-template-areas:
             "logo actions burger"
             "mainnav mainnav mainnav";
-        grid-gap: 0 var(--spacing-l);
-        align-items: center;
-        padding: 0 var(--spacing-normal);
-        height: var(--topbar-height);
-        width: 100%;
-        background-color: var(--color-bg);
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
+    grid-gap: 0 var(--spacing-l);
+    align-items: center;
+    padding: 0 var(--spacing-normal);
+    height: var(--topbar-height);
+    width: 100%;
+    background-color: var(--color-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
 }

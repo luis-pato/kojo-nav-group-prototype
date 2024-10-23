@@ -1,5 +1,4 @@
-t-nav-group[viewport-type="desktop"] {
-    .service-nav {
-        display: none;
-    }
+.service-nav {
+    display: none;
 }
+

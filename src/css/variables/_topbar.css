@@ -3,10 +3,10 @@
     --topbar-height-desktop: 5rem;
 }
 
-:root:has(t-nav-group[viewport-type="mobile"]) {
+:root:has(toujou-topbar[viewport-type="mobile"]) {
     --topbar-height: var(--topbar-height-mobile);
 }
 
-:root:has(t-nav-group[viewport-type="desktop"]) {
+:root:has(toujou-topbar[viewport-type="desktop"]) {
     --topbar-height: var(--topbar-height-desktop);
 }

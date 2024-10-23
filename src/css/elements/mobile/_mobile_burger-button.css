@@ -1,17 +1,15 @@
-t-nav-group[viewport-type="mobile"] {
-    .burger-button {
-        --burger-button-size: var(--spacing-l);
+.burger-button {
+    --burger-button-size: var(--spacing-l);
 
-        border: 1px solid var(--color-primary);
-        background-color: transparent;
-        color: var(--color-primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: var(--burger-button-size);
-        width: var(--burger-button-size);
-        font-size: 1.25rem;
-        grid-area: burger;
-        cursor: pointer;
-    }
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--burger-button-size);
+    width: var(--burger-button-size);
+    font-size: 1.25rem;
+    grid-area: burger;
+    cursor: pointer;
 }
